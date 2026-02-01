@@ -1,0 +1,32 @@
+{
+  "name": "stellar-zkproof-ai-agents",
+  "version": "1.0.0",
+  "description": "ZK proof system for AI agent verification on Stellar using X-Ray Protocol",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node scripts/compile-circuit.js",
+    "setup": "node --max-old-space-size=8192 scripts/setup-ceremony.js",
+    "generate-proof": "node --max-old-space-size=8192 scripts/generate-proof.js",
+    "verify-proof": "node --max-old-space-size=8192 scripts/verify-proof.js",
+    "test": "node --max-old-space-size=8192 scripts/test-system.js",
+    "demo": "node scripts/demo.js",
+    "submit-proof-testnet": "node scripts/submit-proof-testnet.js",
+    "submit-proof": "node scripts/submit-proof.js",
+    "status": "node scripts/check-status.js"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "ffjavascript": "^0.3.0",
+    "snarkjs": "^0.7.6"
+  },
+  "keywords": [
+    "stellar",
+    "zkproof",
+    "soroban",
+    "circom",
+    "x-ray-protocol"
+  ],
+  "author": "",
+  "license": "MIT"
+}
